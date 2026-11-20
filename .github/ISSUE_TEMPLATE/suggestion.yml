@@ -1,0 +1,17 @@
+name: Proposer une amélioration
+description: Suggérez un sujet, une précision ou une amélioration de navigation.
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Votre proposition
+      description: Quel problème cette amélioration résoudrait-elle ?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Détails ou exemple
+      description: Ajoutez un exemple de contenu ou une référence si possible.
+    validations:
+      required: false

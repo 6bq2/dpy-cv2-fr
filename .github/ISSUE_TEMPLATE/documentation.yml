@@ -1,0 +1,31 @@
+name: Signaler une erreur dans un tutoriel
+description: Un extrait, une explication ou un lien semble incorrect.
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Tutoriel concerné
+      placeholder: 03 - TextDisplay.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Ce qui ne fonctionne pas
+      description: Décrivez l’erreur et, si possible, copiez l’extrait concerné.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction proposée
+      description: Facultatif.
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version de discord.py
+      placeholder: 2.x.x
+    validations:
+      required: false
